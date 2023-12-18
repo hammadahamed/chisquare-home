@@ -1,0 +1,40 @@
+$sb-margin: 25px;
+
+.sidebar-wrapper {
+  width: 100%;
+  height: calc(100% - ($sb-margin * 2));
+
+  .inner-wrapper {
+    background-color: var(--app-fg);
+    height: 100%;
+    margin: $sb-margin;
+    margin-left: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+
+    .contents-c {
+      width: 100%;
+    }
+
+    .collapse-c {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      cursor: pointer;
+
+      .chevron {
+        height: 50px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-color: var(--app-fg-2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--app-primary);
+      }
+
+    }
+
+  }
+}

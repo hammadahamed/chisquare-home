@@ -1,0 +1,46 @@
+<div class="app-chart">
+  <div class="top-section">
+    <div class="left">
+      <p class="header">{{payloadData.type}}</p>
+      <span class="sub-w">
+        <p class="subtitle">CY <span class="value">{{formatNumber(payloadData.overall.CY)}}</span> </p>
+        <p class="subtitle">PY <span class="value">{{formatNumber(payloadData.overall.PY)}}</span> </p>
+
+      </span>
+    </div>
+    <div class="right">
+      <span class="change">{{payloadData.changeInPercentage}}%</span>
+      <span class="material-icons">
+        stacked_bar_chart
+      </span>
+      <span class="material-icons">
+        query_stats
+      </span>
+      <span class="material-icons">
+        arrow_downward
+      </span>
+      <span class="material-icons new-window">
+        open_in_new
+      </span>
+    </div>
+  </div>
+
+  <div class="middle-section">
+    <canvas id="MyChart{{chartIndex}}">{{ chart }}</canvas>
+  </div>
+
+  <div class="bottom-section">
+    <div class="legend left">
+      <span class="material-icons">
+        circle
+      </span>
+      <p class="label">CY</p>
+    </div>
+    <div class="legend right">
+      <span class="material-icons">
+        circle
+      </span>
+      <p class="label">PY</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="home-wrapper">
+
+  <div class="info-section">
+    <div>
+      <p class="note">All values are displayed in AED</p>
+    </div>
+
+    <div class="metric">
+      <div class="welcome">
+        <p class="greeting">Hi,</p>
+        <p class="client-name"> Anantha</p>
+
+        <br>
+        <div class="app-button-1">
+          <p>View profile</p>
+          <span class="material-icons">arrow_forward</span>
+        </div>
+      </div>
+      <div class="numerics">
+        <div *ngFor="let metric of metrics; let ind = index" class="metric-div one">
+          <p class="label {{ind+1}}">{{metric.label}}</p>
+          <p class="value {{ind+1}}">{{metric.value}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="action-buttons">
+    <div class="app-button-2">
+      <span class="material-icons">refresh</span>
+      <p>Refresh</p>
+    </div>
+    <div class="app-button-2">
+      <span class="material-icons">tune </span>
+      <p>Filters</p>
+    </div>
+    <div class="app-button-2 special">
+      <span class="material-icons">ios_share</span>
+      <p>Export </p>
+    </div>
+  </div>
+
+  <div class="charts-wrapper">
+    <app-chart *ngFor="let chart of dataCharts; let index = index" [chartIndex]="index"></app-chart>
+
+  </div>
+</div>

@@ -1,1 +1,181 @@
-/* You can add global styles to this file, and also import other style files */
+// FONT IMPORTS ----------------------------------------------------------------
+
+@font-face {
+  font-family: 'poppins';
+  src: url('./assets/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'inter';
+  src: url('./assets/Inter/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: inter;
+}
+
+// THEME COLORS --------------------------------------------------------------------
+
+
+:root {
+  --app-primary: #7950ed;
+  --app-primary-2: #e1d5ff;
+  --app-bg: #f4f4f4;
+  --app-fg: #ffffff;
+  --app-bg-2: rgb(222, 222, 222);
+  --app-fg-2: #f7f7f7;
+  --top-icons-color: #c8c8c8;
+
+  --text: black;
+  --text-note: #969696;
+  --metric-label: #9c9c9c;
+
+  --btn-1-bg: #f4f4f4;
+  --btn-1-text: #7950ed;
+  --btn-2-text: black;
+  --btn-2-bg: #ffffff;
+  --btn-2-special-text: #ffffff;
+  --btn-2-special-bg: #15192c;
+
+  --chart-icon-color: #3d4254;
+  --change-bg: #f4f4f4;
+  --chart-subtitle-text: #15192c;
+
+  --chart-color-1: #9272f8;
+  --chart-color-2: #e1d5ff;
+
+}
+
+// ---- DARK
+[data-theme="dark"] {
+  --app-primary: #7950ed;
+  --app-primary-2: #e1d5ff;
+  --app-bg: #15192c;
+  --app-fg: #1f2336;
+  --app-fg-2: #15192c;
+  --top-icons-color: #464a5b;
+
+  --text: white;
+  --text-note: #565269;
+  --metric-label: #d9d9d9;
+
+  --btn-1-bg: #7950ed;
+  --btn-1-text: white;
+  --btn-2-text: white;
+  --btn-2-bg: #1f2336;
+  --btn-2-special-text: white;
+  --btn-2-special-bg: #7950ed;
+
+  --chart-icon-color: #7b7f8e;
+  --change-bg: #15192c;
+  --chart-subtitle-text: #acacac;
+
+  --chart-color-1: #9272f8;
+  --chart-color-2: #e1d5ff;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+
+/* ---------------------------- CUSTOM SCROLL-BAR --------------------------- */
+
+*::-webkit-scrollbar {
+  /* @apply w-1.5 h-1; */
+  width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+  /* @apply rounded-full bg-gray-100; */
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 0px;
+}
+
+*::-webkit-scrollbar-thumb {
+  /* @apply w-1.5 h-1 bg-gray-400 bg-opacity-60 rounded-full; */
+  width: 2px;
+  border-radius: 2px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-track-piece {
+  background: transparent;
+  width: 10px;
+}
+
+html {
+  scrollbar-color: #abadb1;
+  scrollbar-width: 2px;
+}
+
+
+// COMMON STYLERS -----------------------------------
+
+.app-button-1 {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+  background-color: var(--btn-1-bg);
+  width: max-content;
+  padding: 5px 10px;
+  gap: 5px;
+
+  color: var(--btn-1-text);
+
+  .material-icons {
+    transition: all .2s ease;
+    font-size: 16px;
+  }
+
+  &:hover {
+    .material-icons {
+      transition: all .2s ease;
+      translate: 4px 0;
+    }
+  }
+}
+
+.app-button-2 {
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  cursor: pointer;
+  width: max-content;
+  padding: 6px 15px;
+  gap: 5px;
+  transition: all .1s ease;
+  color: var(--text);
+  background-color: var(--app-fg);
+
+  &.special {
+    color: var(--btn-2-special-text);
+    background-color: var(--btn-2-special-bg);
+  }
+
+  .material-icons {
+    font-size: 15px;
+  }
+
+  &:hover {
+    scale: 1.05;
+  }
+}
+
+.material-icons {
+  z-index: 1;
+}
