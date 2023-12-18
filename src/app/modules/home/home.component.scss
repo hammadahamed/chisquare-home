@@ -9,6 +9,7 @@
   }
 
   .info-section {
+    padding-bottom: 20px;
 
     .note {
       font-size: 14px;
@@ -80,9 +81,33 @@
     top: 0;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
     gap: 10px;
     transition: all .2s ease;
+
+    .right,
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+    }
+
+    .right {
+      justify-content: end;
+    }
+
+    .left {
+      gap: 30px;
+
+      p {
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-left: 10px;
+        color: var(--text);
+      }
+    }
 
     .special {
       span {
