@@ -5,6 +5,7 @@ $sb-margin: 25px;
   height: calc(100% - ($sb-margin * 2));
 
   .inner-wrapper {
+    position: relative;
     background-color: var(--app-fg);
     height: 100%;
     margin: $sb-margin;
@@ -18,6 +19,9 @@ $sb-margin: 25px;
     }
 
     .collapse-c {
+      position: absolute;
+      right: 0px;
+      top: calc(50% - 10px);
       display: flex;
       justify-content: end;
       align-items: center;
@@ -35,6 +39,41 @@ $sb-margin: 25px;
       }
 
     }
+  }
 
+  .contents-c {
+    .logo-c {
+      height: 100px;
+      background-color: var(--app-bg);
+      margin: 0 15px;
+      margin-top: 20px;
+      border-radius: 14px;
+    }
+
+    .menu-item {
+      text-transform: uppercase;
+      font-size: 12px;
+      margin: 5px 0;
+      padding: 12px 0px;
+      padding-left: 30px;
+      margin-right: 15px;
+      transition: all .2s ease;
+      cursor: pointer;
+      color: var(--text);
+      overflow: hidden;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+
+      &:hover,
+      &.active {
+        background-color: rgba(0, 0, 0, 0.03);
+      }
+
+      &.active {
+        border-left: 6px solid var(--app-primary);
+        color: var(--app-primary);
+        font-weight: 500;
+      }
+    }
   }
 }

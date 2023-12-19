@@ -8,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class SidebarComponent implements OnInit {
   constructor() {}
 
+  sideMenus: string[] = [
+    'Overview',
+    'KPY Evaluation',
+    'Bench Performance',
+    'Sales',
+  ];
+
   collapsed: boolean = false;
+
+  currentMenu: string = this.sideMenus[0];
 
   toggleSidebar() {
     this.collapsed = !this.collapsed;

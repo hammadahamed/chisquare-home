@@ -64,9 +64,9 @@ export class ChartComponent implements OnInit, AfterViewInit {
     }
   }
 
-  getDataValues(type: string): number[] {
-    return Object.values(this.payloadData.monthly).map(
-      (_value: any) => _value[type]
+  getDataValues(type: string): string[] {
+    return Object.values(this.payloadData.monthly).map((_value: any) =>
+      this.formatNumber(_value[type])
     );
   }
 

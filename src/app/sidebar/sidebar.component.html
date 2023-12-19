@@ -1,7 +1,15 @@
 <div class="sidebar-wrapper">
-
   <div class="inner-wrapper">
     <div class="contents-c">
+
+      <div class="logo-c">
+      </div>
+
+      <br>
+      <div [class]="{ 'menu-item' :true, 'active': menu === currentMenu}" *ngFor="let menu of sideMenus"
+        (click)="currentMenu = menu">
+        <p>{{menu}}</p>
+      </div>
 
     </div>
 
