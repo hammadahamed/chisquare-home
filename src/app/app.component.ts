@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'chisqaure-home';
-  currentTheme: string = 'light';
+  currentTheme: string = 'dark';
 
   setTheme() {
     console.log('clicked');

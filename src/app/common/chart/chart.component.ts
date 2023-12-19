@@ -15,7 +15,9 @@ export class ChartComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {}
 
   ngAfterViewInit(): void {
-    this.createChart();
+    setTimeout(() => {
+      this.createChart();
+    }, 200);
   }
 
   public chart: any;
