@@ -1,15 +1,14 @@
-<div class="app-chart">
+<div class="app-chart" *ngIf="payload">
   <div class="top-section">
     <div class="left">
-      <p class="header">{{payloadData.type}}</p>
+      <p class="header">{{payload.Type}}</p>
       <span class="sub-w">
-        <p class="subtitle">CY <span class="value">{{formatNumber(payloadData.overall.CY)}}</span> </p>
-        <p class="subtitle">PY <span class="value">{{formatNumber(payloadData.overall.PY)}}</span> </p>
-
+        <p class="subtitle">CY <span class="value">{{formatNumber(payload.Overall['CY']['value'])}}</span> </p>
+        <p class="subtitle">PY <span class="value">{{formatNumber(payload.Overall['PY']['value'])}}</span> </p>
       </span>
     </div>
     <div class="right">
-      <span class="change">{{payloadData.changeInPercentage}}%</span>
+      <span class="change">{{payload.changeInPercentage || 100}}%</span>
       <span class="material-icons">
         stacked_bar_chart
       </span>

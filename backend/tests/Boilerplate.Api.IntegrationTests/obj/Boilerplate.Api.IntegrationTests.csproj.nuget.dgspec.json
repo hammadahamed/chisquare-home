@@ -1,0 +1,730 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/tests/Boilerplate.Api.IntegrationTests/Boilerplate.Api.IntegrationTests.csproj": {}
+  },
+  "projects": {
+    "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Api/Boilerplate.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Api/Boilerplate.Api.csproj",
+        "projectName": "Boilerplate.Api",
+        "projectPath": "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Api/Boilerplate.Api.csproj",
+        "packagesPath": "/Users/ashwinpalanisamy/.nuget/packages/",
+        "outputPath": "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Api/obj/",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/Users/ashwinpalanisamy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Application/Boilerplate.Application.csproj": {
+                "projectPath": "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Application/Boilerplate.Application.csproj"
+              },
+              "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Domain/Boilerplate.Domain.csproj": {
+                "projectPath": "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Domain/Boilerplate.Domain.csproj"
+              },
+              "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Infrastructure/Boilerplate.Infrastructure.csproj": {
+                "projectPath": "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Infrastructure/Boilerplate.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1605"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Ardalis.Result.AspNetCore": {
+              "target": "Package",
+              "version": "[7.2.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Ben.Demystifier": {
+              "target": "Package",
+              "version": "[0.4.1, )",
+              "versionCentrallyManaged": true
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.19.5, )",
+              "versionCentrallyManaged": true
+            },
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": {
+              "target": "Package",
+              "version": "[1.7.0, )",
+              "versionCentrallyManaged": true
+            },
+            "OpenTelemetry.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[1.7.0, )",
+              "versionCentrallyManaged": true
+            },
+            "OpenTelemetry.Instrumentation.AspNetCore": {
+              "target": "Package",
+              "version": "[1.7.0, )",
+              "versionCentrallyManaged": true
+            },
+            "OpenTelemetry.Instrumentation.Http": {
+              "target": "Package",
+              "version": "[1.7.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[3.1.1, )",
+              "versionCentrallyManaged": true
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Serilog.Exceptions": {
+              "target": "Package",
+              "version": "[8.4.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Serilog.Sinks.Async": {
+              "target": "Package",
+              "version": "[1.5.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[5.0.1, )",
+              "versionCentrallyManaged": true
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Swashbuckle.AspNetCore.Filters": {
+              "target": "Package",
+              "version": "[7.0.12, )",
+              "versionCentrallyManaged": true
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.5.0, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Ardalis.Result": "[7.2.0, )",
+            "Ardalis.Result.AspNetCore": "[7.2.0, )",
+            "Ardalis.Result.FluentValidation": "[7.2.0, )",
+            "Ben.Demystifier": "[0.4.1, )",
+            "Bogus": "[35.0.1, )",
+            "coverlet.collector": "[6.0.0, )",
+            "coverlet.msbuild": "[6.0.0, )",
+            "EntityFrameworkCore.Exceptions.PostgreSQL": "[8.0.0, )",
+            "FluentAssertions": "[6.12.0, )",
+            "FluentValidation": "[11.9.0, )",
+            "FluentValidation.AspNetCore": "[11.3.0, )",
+            "Mapster.EFCore": "[5.1.1, )",
+            "MediatR": "[12.2.0, )",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.2.0, )",
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "[8.0.0, )",
+            "Microsoft.AspNetCore.Mvc.Testing": "[8.0.0, )",
+            "Microsoft.EntityFrameworkCore": "[8.0.0, )",
+            "Microsoft.EntityFrameworkCore.Design": "[8.0.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.8.0, )",
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "[1.19.5, )",
+            "NewId": "[4.0.1, )",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "[8.0.0, )",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "[1.7.0, )",
+            "OpenTelemetry.Extensions.Hosting": "[1.7.0, )",
+            "OpenTelemetry.Instrumentation.AspNetCore": "[1.7.0, )",
+            "OpenTelemetry.Instrumentation.Http": "[1.7.0, )",
+            "Respawn": "[6.1.0, )",
+            "Serilog": "[3.1.1, )",
+            "Serilog.AspNetCore": "[8.0.0, )",
+            "Serilog.Exceptions": "[8.4.0, )",
+            "Serilog.Sinks.Async": "[1.5.0, )",
+            "Serilog.Sinks.Console": "[5.0.1, )",
+            "StronglyTypedId": "[1.0.0-beta06, )",
+            "Swashbuckle.AspNetCore": "[6.5.0, )",
+            "Swashbuckle.AspNetCore.Filters": "[7.0.12, )",
+            "Swashbuckle.AspNetCore.Swagger": "[6.5.0, )",
+            "Testcontainers.PostgreSql": "[3.6.0, )",
+            "xunit": "[2.6.2, )",
+            "xunit.runner.visualstudio": "[2.5.5, )"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Application/Boilerplate.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Application/Boilerplate.Application.csproj",
+        "projectName": "Boilerplate.Application",
+        "projectPath": "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Application/Boilerplate.Application.csproj",
+        "packagesPath": "/Users/ashwinpalanisamy/.nuget/packages/",
+        "outputPath": "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Application/obj/",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/Users/ashwinpalanisamy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Domain/Boilerplate.Domain.csproj": {
+                "projectPath": "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Domain/Boilerplate.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1605"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Ardalis.Result": {
+              "target": "Package",
+              "version": "[7.2.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Ardalis.Result.FluentValidation": {
+              "target": "Package",
+              "version": "[7.2.0, )",
+              "versionCentrallyManaged": true
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Mapster.EFCore": {
+              "target": "Package",
+              "version": "[5.1.1, )",
+              "versionCentrallyManaged": true
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Ardalis.Result": "[7.2.0, )",
+            "Ardalis.Result.AspNetCore": "[7.2.0, )",
+            "Ardalis.Result.FluentValidation": "[7.2.0, )",
+            "Ben.Demystifier": "[0.4.1, )",
+            "Bogus": "[35.0.1, )",
+            "coverlet.collector": "[6.0.0, )",
+            "coverlet.msbuild": "[6.0.0, )",
+            "EntityFrameworkCore.Exceptions.PostgreSQL": "[8.0.0, )",
+            "FluentAssertions": "[6.12.0, )",
+            "FluentValidation": "[11.9.0, )",
+            "FluentValidation.AspNetCore": "[11.3.0, )",
+            "Mapster.EFCore": "[5.1.1, )",
+            "MediatR": "[12.2.0, )",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.2.0, )",
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "[8.0.0, )",
+            "Microsoft.AspNetCore.Mvc.Testing": "[8.0.0, )",
+            "Microsoft.EntityFrameworkCore": "[8.0.0, )",
+            "Microsoft.EntityFrameworkCore.Design": "[8.0.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.8.0, )",
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "[1.19.5, )",
+            "NewId": "[4.0.1, )",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "[8.0.0, )",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "[1.7.0, )",
+            "OpenTelemetry.Extensions.Hosting": "[1.7.0, )",
+            "OpenTelemetry.Instrumentation.AspNetCore": "[1.7.0, )",
+            "OpenTelemetry.Instrumentation.Http": "[1.7.0, )",
+            "Respawn": "[6.1.0, )",
+            "Serilog": "[3.1.1, )",
+            "Serilog.AspNetCore": "[8.0.0, )",
+            "Serilog.Exceptions": "[8.4.0, )",
+            "Serilog.Sinks.Async": "[1.5.0, )",
+            "Serilog.Sinks.Console": "[5.0.1, )",
+            "StronglyTypedId": "[1.0.0-beta06, )",
+            "Swashbuckle.AspNetCore": "[6.5.0, )",
+            "Swashbuckle.AspNetCore.Filters": "[7.0.12, )",
+            "Swashbuckle.AspNetCore.Swagger": "[6.5.0, )",
+            "Testcontainers.PostgreSql": "[3.6.0, )",
+            "xunit": "[2.6.2, )",
+            "xunit.runner.visualstudio": "[2.5.5, )"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Domain/Boilerplate.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Domain/Boilerplate.Domain.csproj",
+        "projectName": "Boilerplate.Domain",
+        "projectPath": "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Domain/Boilerplate.Domain.csproj",
+        "packagesPath": "/Users/ashwinpalanisamy/.nuget/packages/",
+        "outputPath": "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/Users/ashwinpalanisamy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1605"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "NewId": {
+              "target": "Package",
+              "version": "[4.0.1, )",
+              "versionCentrallyManaged": true
+            },
+            "StronglyTypedId": {
+              "target": "Package",
+              "version": "[1.0.0-beta06, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Ardalis.Result": "[7.2.0, )",
+            "Ardalis.Result.AspNetCore": "[7.2.0, )",
+            "Ardalis.Result.FluentValidation": "[7.2.0, )",
+            "Ben.Demystifier": "[0.4.1, )",
+            "Bogus": "[35.0.1, )",
+            "coverlet.collector": "[6.0.0, )",
+            "coverlet.msbuild": "[6.0.0, )",
+            "EntityFrameworkCore.Exceptions.PostgreSQL": "[8.0.0, )",
+            "FluentAssertions": "[6.12.0, )",
+            "FluentValidation": "[11.9.0, )",
+            "FluentValidation.AspNetCore": "[11.3.0, )",
+            "Mapster.EFCore": "[5.1.1, )",
+            "MediatR": "[12.2.0, )",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.2.0, )",
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "[8.0.0, )",
+            "Microsoft.AspNetCore.Mvc.Testing": "[8.0.0, )",
+            "Microsoft.EntityFrameworkCore": "[8.0.0, )",
+            "Microsoft.EntityFrameworkCore.Design": "[8.0.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.8.0, )",
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "[1.19.5, )",
+            "NewId": "[4.0.1, )",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "[8.0.0, )",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "[1.7.0, )",
+            "OpenTelemetry.Extensions.Hosting": "[1.7.0, )",
+            "OpenTelemetry.Instrumentation.AspNetCore": "[1.7.0, )",
+            "OpenTelemetry.Instrumentation.Http": "[1.7.0, )",
+            "Respawn": "[6.1.0, )",
+            "Serilog": "[3.1.1, )",
+            "Serilog.AspNetCore": "[8.0.0, )",
+            "Serilog.Exceptions": "[8.4.0, )",
+            "Serilog.Sinks.Async": "[1.5.0, )",
+            "Serilog.Sinks.Console": "[5.0.1, )",
+            "StronglyTypedId": "[1.0.0-beta06, )",
+            "Swashbuckle.AspNetCore": "[6.5.0, )",
+            "Swashbuckle.AspNetCore.Filters": "[7.0.12, )",
+            "Swashbuckle.AspNetCore.Swagger": "[6.5.0, )",
+            "Testcontainers.PostgreSql": "[3.6.0, )",
+            "xunit": "[2.6.2, )",
+            "xunit.runner.visualstudio": "[2.5.5, )"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Infrastructure/Boilerplate.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Infrastructure/Boilerplate.Infrastructure.csproj",
+        "projectName": "Boilerplate.Infrastructure",
+        "projectPath": "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Infrastructure/Boilerplate.Infrastructure.csproj",
+        "packagesPath": "/Users/ashwinpalanisamy/.nuget/packages/",
+        "outputPath": "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/Users/ashwinpalanisamy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Application/Boilerplate.Application.csproj": {
+                "projectPath": "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Application/Boilerplate.Application.csproj"
+              },
+              "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Domain/Boilerplate.Domain.csproj": {
+                "projectPath": "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Domain/Boilerplate.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1605"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "EntityFrameworkCore.Exceptions.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Ardalis.Result": "[7.2.0, )",
+            "Ardalis.Result.AspNetCore": "[7.2.0, )",
+            "Ardalis.Result.FluentValidation": "[7.2.0, )",
+            "Ben.Demystifier": "[0.4.1, )",
+            "Bogus": "[35.0.1, )",
+            "coverlet.collector": "[6.0.0, )",
+            "coverlet.msbuild": "[6.0.0, )",
+            "EntityFrameworkCore.Exceptions.PostgreSQL": "[8.0.0, )",
+            "FluentAssertions": "[6.12.0, )",
+            "FluentValidation": "[11.9.0, )",
+            "FluentValidation.AspNetCore": "[11.3.0, )",
+            "Mapster.EFCore": "[5.1.1, )",
+            "MediatR": "[12.2.0, )",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.2.0, )",
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "[8.0.0, )",
+            "Microsoft.AspNetCore.Mvc.Testing": "[8.0.0, )",
+            "Microsoft.EntityFrameworkCore": "[8.0.0, )",
+            "Microsoft.EntityFrameworkCore.Design": "[8.0.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.8.0, )",
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "[1.19.5, )",
+            "NewId": "[4.0.1, )",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "[8.0.0, )",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "[1.7.0, )",
+            "OpenTelemetry.Extensions.Hosting": "[1.7.0, )",
+            "OpenTelemetry.Instrumentation.AspNetCore": "[1.7.0, )",
+            "OpenTelemetry.Instrumentation.Http": "[1.7.0, )",
+            "Respawn": "[6.1.0, )",
+            "Serilog": "[3.1.1, )",
+            "Serilog.AspNetCore": "[8.0.0, )",
+            "Serilog.Exceptions": "[8.4.0, )",
+            "Serilog.Sinks.Async": "[1.5.0, )",
+            "Serilog.Sinks.Console": "[5.0.1, )",
+            "StronglyTypedId": "[1.0.0-beta06, )",
+            "Swashbuckle.AspNetCore": "[6.5.0, )",
+            "Swashbuckle.AspNetCore.Filters": "[7.0.12, )",
+            "Swashbuckle.AspNetCore.Swagger": "[6.5.0, )",
+            "Testcontainers.PostgreSql": "[3.6.0, )",
+            "xunit": "[2.6.2, )",
+            "xunit.runner.visualstudio": "[2.5.5, )"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/tests/Boilerplate.Api.IntegrationTests/Boilerplate.Api.IntegrationTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/tests/Boilerplate.Api.IntegrationTests/Boilerplate.Api.IntegrationTests.csproj",
+        "projectName": "Boilerplate.Api.IntegrationTests",
+        "projectPath": "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/tests/Boilerplate.Api.IntegrationTests/Boilerplate.Api.IntegrationTests.csproj",
+        "packagesPath": "/Users/ashwinpalanisamy/.nuget/packages/",
+        "outputPath": "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/tests/Boilerplate.Api.IntegrationTests/obj/",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/Users/ashwinpalanisamy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Api/Boilerplate.Api.csproj": {
+                "projectPath": "/Users/ashwinpalanisamy/Desktop/dotnet-api-boilerplate/src/Boilerplate.Api/Boilerplate.Api.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1605"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[35.0.1, )",
+              "versionCentrallyManaged": true
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.12.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Respawn": {
+              "target": "Package",
+              "version": "[6.1.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Testcontainers.PostgreSql": {
+              "target": "Package",
+              "version": "[3.6.0, )",
+              "versionCentrallyManaged": true
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.6.2, )",
+              "versionCentrallyManaged": true
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.5.5, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Ardalis.Result": "[7.2.0, )",
+            "Ardalis.Result.AspNetCore": "[7.2.0, )",
+            "Ardalis.Result.FluentValidation": "[7.2.0, )",
+            "Ben.Demystifier": "[0.4.1, )",
+            "Bogus": "[35.0.1, )",
+            "coverlet.collector": "[6.0.0, )",
+            "coverlet.msbuild": "[6.0.0, )",
+            "EntityFrameworkCore.Exceptions.PostgreSQL": "[8.0.0, )",
+            "FluentAssertions": "[6.12.0, )",
+            "FluentValidation": "[11.9.0, )",
+            "FluentValidation.AspNetCore": "[11.3.0, )",
+            "Mapster.EFCore": "[5.1.1, )",
+            "MediatR": "[12.2.0, )",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.2.0, )",
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "[8.0.0, )",
+            "Microsoft.AspNetCore.Mvc.Testing": "[8.0.0, )",
+            "Microsoft.EntityFrameworkCore": "[8.0.0, )",
+            "Microsoft.EntityFrameworkCore.Design": "[8.0.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.8.0, )",
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "[1.19.5, )",
+            "NewId": "[4.0.1, )",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "[8.0.0, )",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "[1.7.0, )",
+            "OpenTelemetry.Extensions.Hosting": "[1.7.0, )",
+            "OpenTelemetry.Instrumentation.AspNetCore": "[1.7.0, )",
+            "OpenTelemetry.Instrumentation.Http": "[1.7.0, )",
+            "Respawn": "[6.1.0, )",
+            "Serilog": "[3.1.1, )",
+            "Serilog.AspNetCore": "[8.0.0, )",
+            "Serilog.Exceptions": "[8.4.0, )",
+            "Serilog.Sinks.Async": "[1.5.0, )",
+            "Serilog.Sinks.Console": "[5.0.1, )",
+            "StronglyTypedId": "[1.0.0-beta06, )",
+            "Swashbuckle.AspNetCore": "[6.5.0, )",
+            "Swashbuckle.AspNetCore.Filters": "[7.0.12, )",
+            "Swashbuckle.AspNetCore.Swagger": "[6.5.0, )",
+            "Testcontainers.PostgreSql": "[3.6.0, )",
+            "xunit": "[2.6.2, )",
+            "xunit.runner.visualstudio": "[2.5.5, )"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
