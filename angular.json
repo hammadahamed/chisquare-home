@@ -76,7 +76,10 @@
               "browserTarget": "chisqaure-home:build:development"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "development",
+          "options": {
+            "proxyConfig": "proxy.conf.json"
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
@@ -105,5 +108,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "7bba94d2-94f3-4d99-81c9-cb8e3c2c3c78"
   }
 }

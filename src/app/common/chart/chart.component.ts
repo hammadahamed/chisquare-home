@@ -9,12 +9,16 @@ import Chart from 'chart.js/auto';
 export class ChartComponent implements OnInit, AfterViewInit {
   @Input()
   chartIndex!: number;
+  @Input()
+  payload!: any;
 
   constructor() {}
 
   ngOnInit(): void {}
 
   ngAfterViewInit(): void {
+    console.log(this.payload);
+    
     setTimeout(() => {
       this.createChart();
     }, 200);
@@ -37,25 +41,6 @@ export class ChartComponent implements OnInit, AfterViewInit {
     'DEC',
   ];
 
-  public payloadData: any = {
-    type: 'Revenue',
-    overall: { CY: 4500000, PY: 4100000 },
-    changeInPercentage: 12,
-    monthly: {
-      Jan: { CY: 89000, PY: 99000 },
-      Feb: { CY: 89000, PY: 19000 },
-      Mar: { CY: 80000, PY: 72000 },
-      Apr: { CY: 89000, PY: 99000 },
-      May: { CY: 89000, PY: 99000 },
-      Jun: { CY: 89000, PY: 19000 },
-      Jul: { CY: 80000, PY: 72000 },
-      Aug: { CY: 89000, PY: 99000 },
-      Sep: { CY: 89000, PY: 99000 },
-      Oct: { CY: 89000, PY: 19000 },
-      Nov: { CY: 80000, PY: 72000 },
-      Dec: { CY: 89000, PY: 209000 },
-    },
-  };
 
   formatNumber(number: number): string {
     if (number >= 1000000) {
@@ -67,7 +52,7 @@ export class ChartComponent implements OnInit, AfterViewInit {
   }
 
   getDataValues(type: string): string[] {
-    return Object.values(this.payloadData.monthly).map((_value: any) =>
+    return Object.values(this.payload.Monthly).map((_value: any) =>
       this.formatNumber(_value[type])
     );
   }
