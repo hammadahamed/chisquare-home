@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/chi2.props" />
+</Project>
