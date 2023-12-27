@@ -28,7 +28,9 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.chartsService.getChartData('Revenue').subscribe(
       (data) => {
-        this.dataCharts.push(data);
+        console.log(data);
+        
+        this.dataCharts.push(...data);
       },
       (error) => {
         console.error(error);
@@ -37,7 +39,7 @@ export class HomeComponent implements OnInit {
 
     this.chartsService.getChartData('Stock Turnover Ratio').subscribe(
       (data) => {
-        this.dataCharts.push(data);
+        this.dataCharts.push(...data);
       },
       (error) => {
         console.error(error);

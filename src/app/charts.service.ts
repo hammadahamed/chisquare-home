@@ -6,12 +6,12 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ChartsService {
-  private apiUrl = 'http://localhost:5001/api';
+  private apiUrl = 'http://localhost:5102/api';
   constructor(private http: HttpClient) { }
 
   getChartData(Type: string): Observable<any> {
-    const url = `${this.apiUrl}/charts`; 
-    return this.http.post<any>(url, {Type});
+    const url = `${this.apiUrl}/charts?type=${Type}`; 
+    return this.http.get<any>(url);
   }
 
 }
