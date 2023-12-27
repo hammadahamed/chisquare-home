@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("chi2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f775eec3481943b7a9f311e5bf15cc066d8a05d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("chi2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("chi2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

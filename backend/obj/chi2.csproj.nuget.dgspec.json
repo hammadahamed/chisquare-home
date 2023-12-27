@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ashwinpalanisamy/Desktop/chi2/chi2.csproj": {}
+    "/Users/ashwinpalanisamy/Desktop/chisquare-home/backend/chi2.csproj": {}
   },
   "projects": {
-    "/Users/ashwinpalanisamy/Desktop/chi2/chi2.csproj": {
+    "/Users/ashwinpalanisamy/Desktop/chisquare-home/backend/chi2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ashwinpalanisamy/Desktop/chi2/chi2.csproj",
+        "projectUniqueName": "/Users/ashwinpalanisamy/Desktop/chisquare-home/backend/chi2.csproj",
         "projectName": "chi2",
-        "projectPath": "/Users/ashwinpalanisamy/Desktop/chi2/chi2.csproj",
+        "projectPath": "/Users/ashwinpalanisamy/Desktop/chisquare-home/backend/chi2.csproj",
         "packagesPath": "/Users/ashwinpalanisamy/.nuget/packages/",
-        "outputPath": "/Users/ashwinpalanisamy/Desktop/chi2/obj/",
+        "outputPath": "/Users/ashwinpalanisamy/Desktop/chisquare-home/backend/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ashwinpalanisamy/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.0, )"

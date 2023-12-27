@@ -4,7 +4,15 @@ using Npgsql;
 using Npgsql.Json.NET;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddCors(options =>
+    {
+        options.AddPolicy("AllowSpecificOrigin",
+                builder => builder
+                    .WithOrigins("http://localhost:4200")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowCredentials());
+});
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -25,7 +33,7 @@ app.UseRouting();
 
 app.UseAuthorization();
 NpgsqlConnection.GlobalTypeMapper.UseJsonNet();
-
+app.UseCors("AllowSpecificOrigin");
 app.MapControllers();
 app.MapControllerRoute(
     name: "default",
